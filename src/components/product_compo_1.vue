@@ -3,13 +3,13 @@
     <h1>Book list one</h1>
     <ul>
       <li class="item" v-for="product in productList" :key="product.id">
-        <span class="user"> Author: {{ product.user }} </span> <br />
+        <span class="user"> Author: {{ product.user.src }} </span> <br />
         <span class="datetime"> <b>Book:</b> {{ product.datetime }} </span> <br />
         <span class="content">
           <b>Goodreads:</b> {{ product.content }}
         </span>
         <br />
-        <span class="image"> Price:{{ product.image }} </span>
+        <span class="image"> Price:{{ product.image.src }} </span>
       </li>
     </ul>
   </div>
