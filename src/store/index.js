@@ -8,8 +8,7 @@ export default new Vuex.Store({
     productList: [{
       id: 1,
       user: {
-          src: "../assets/usericon.png"
-      
+          src: "usericon.png"
       },
       datetime: "2014-01-01",
       content: "Excellent meme!",
