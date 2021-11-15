@@ -1,13 +1,13 @@
 <template>
   <div id="comp-list-one">
-    <h1>Book list one</h1>
+    <h1>Post feed</h1>
     <ul>
       <li class="item" v-for="product in productList" :key="product.id">
         <img :src='product.user'>
-        <span class="user"> Author: {{ product.user.src }} </span> <br />
-        <span class="datetime"> <b>Book:</b> {{ product.datetime }} </span> <br />
+       
+        <span class="datetime"> <b>Date:</b> {{ product.datetime }} </span> <br />
         <span class="content">
-          <b>Goodreads:</b> {{ product.content }}
+          <b></b> {{ product.content }}
         </span>
         <br />
         <img :src='product.image'>
@@ -38,16 +38,23 @@ export default {
   background: #ffb1b1;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
-  padding: 10px 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  
+  padding: 10px 10px;
+  width: 60%;
+  border-radius: 4px;
 }
 #comp-list-one ul {
   padding: 0;
 }
 #comp-list-one li {
   display: inline-block;
-  margin-right: 10px;
-  margin-top: 10px;
-  padding: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
   background: rgba(255, 255, 255, 0.7);
 }
 .price {
