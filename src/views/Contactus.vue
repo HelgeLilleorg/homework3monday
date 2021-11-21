@@ -29,8 +29,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: auto;
-  text-align: center;
+  
+
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;

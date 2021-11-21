@@ -59,6 +59,7 @@ export default {
 button {
   background-color: #555;
   border: none;
+  
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -66,4 +67,5 @@ button {
   box-shadow: 3px 3px 10px -4px #242424;
   cursor: pointer;
 }
+
 </style>

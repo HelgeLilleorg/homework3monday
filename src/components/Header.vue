@@ -1,8 +1,8 @@
 <template>
   <div id="nav" class="header" >
-    <router-link to="/contactus" class="headline" active-link="active">Contact Us</router-link> |
+    <router-link to="/contactus" exact active-link="active">Contact Us</router-link> |
     <router-link to="/" exact active-link="active"> Posts </router-link> |
-    <router-link to="/about" class="headline" active-link="active">About</router-link>
+    <router-link to="/about" exact active-link="active">About</router-link>
     <router-view />
   </div>
 </template>
@@ -23,35 +23,27 @@ export default {
 .active {
   background-color: pink;
   border-color: grey;
-  padding: 1%;
+  color: black;
+  padding: 2%;
   border-radius: 2px;
   border-spacing: 2px;
   
+    font-size: 24px;
+    text-align: center;
+    width: auto;
+  
 }
 
-
-.headline:onclick {
-  color: black;
-  box-shadow: 6px 6px 10px -4px #242424;
-}
-.headline:onhover {
-  color: red;
-}
 
 .header {
     
     margin: 20px 40px 40px 40px;
     font-size: 24px;
     text-align: center;
+    width: auto;
     
     
 }
 
-header:onhover {
-  color: pink;
-}
-.header:onclick {
-  color: pink
-}
 
 </style>
