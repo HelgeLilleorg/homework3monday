@@ -17,19 +17,18 @@ export default {
 
 * {
 
-  color: pink;
+  color: darkgrey;
 }
 
 .active {
-  background-color: grey;
+  background-color: pink;
   border-color: grey;
+  padding: 1%;
   border-radius: 2px;
   border-spacing: 2px;
-  color: pink;
+  
 }
-.active:onhover {
-  color: red;
-}
+
 
 .headline:onclick {
   color: black;
@@ -40,7 +39,7 @@ export default {
 }
 
 .header {
-    padding: 20px;
+    
     margin: 20px 40px 40px 40px;
     font-size: 24px;
     text-align: center;
