@@ -1,6 +1,6 @@
 <template>
   <div class="mainPage">
-    <v-header></v-header>
+    <v-header class="headerStyle"></v-header>
     
     <v-footer></v-footer>
   </div>
@@ -35,6 +35,12 @@ export default {
   align-content: center;
   display: flex;
   flex-direction: column;
+}
+
+.headerStyle:onclick {
+  color: black;
+
+
 }
 .content {
   max-width: 500px;
