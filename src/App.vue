@@ -1,20 +1,26 @@
 <template>
   <div class="mainPage">
+    <v-header></v-header>
     <section class="content" style="padding-top: 40px">
       <div class="resetClass">
         <button v-on:click="resetLikes">Reset Likes</button>
       </div>
       <Post> </Post>
     </section>
+    <v-footer></v-footer>
   </div>
 </template>
 
 <script>
 import Post from "@/components/Post.vue";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "MainPage",
-  components: { Post },
+  components: { Post,
+  "v-header": Header,
+    "v-footer": Footer, },
   data() {
     return {};
   },

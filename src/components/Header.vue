@@ -1,37 +1,17 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Contactus from "../views/Contactus.vue";
-import Products from "../views/MainPage.vue";
-import About from "../views/About.vue";
+<template>
+  <div id="nav">
+    <router-link to="/contactus">Contact Us</router-link> |
+    <router-link to="/"> Posts </router-link> |
+    <router-link to="/about">About</router-link>
+    <router-view />
+  </div>
+</template>
 
+<script>
+export default {
+  name: "Header",
+};
+</script>
 
-Vue.use(VueRouter);
-
-const routes = [{
-        path: "/contactus",
-        name: "Contact Us",
-        component: Contactus,
-    },
-    {
-        path: "/about",
-        name: "About",
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: About,
-    },
-    {
-        path: "/",
-        name: "MainPage",
-        component: Products,
-    },
-
-];
-
-const router = new VueRouter({
-    mode: "history",
-    base: process.env.BASE_URL,
-    routes,
-});
-
-export default router;
+<style>
+</style>
