@@ -7,32 +7,31 @@ import About from "../views/About.vue";
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: "/contactus",
-    name: "Contact Us",
-    component: Contactus,
-  },
-  {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: About,
-  },
-  {
-    path: "/",
-    name: "Products",
-    component: Products,
+const routes = [{
+        path: "/contactus",
+        name: "Contact Us",
+        component: Contactus,
     },
-   
+    {
+        path: "/about",
+        name: "About",
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: About,
+    },
+    {
+        path: "/",
+        name: "MainPage",
+        component: Products,
+    },
+
 ];
 
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes,
+    mode: "history",
+    base: process.env.BASE_URL,
+    routes,
 });
 
 export default router;
