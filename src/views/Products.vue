@@ -1,15 +1,20 @@
 <template>
   <div class="mainPage">
-   
+   <section class="content" style="padding-top: 40px">
+      <div class="resetClass">
+        <button v-on:click="resetLikes">Reset Likes</button>
+      </div>
+      <Post> </Post>
+    </section>
   </div>
 </template>
 
 <script>
-//import Post from "@/components/Post.vue";
+import Post from "@/components/Post.vue";
 
 export default {
   name: "MainPage",
-  components: {  },
+  components: { Post },
   data() {
     return {};
   },
