@@ -1,6 +1,6 @@
 <template>
   <div class="mainPage">
-    <v-header ></v-header>
+    <v-header class="headerStyle"></v-header>
     
     <v-footer></v-footer>
   </div>
@@ -18,11 +18,6 @@ export default {
   data() {
     return {};
   },
-  methods: {
-    resetLikes: function () {
-      this.$store.commit("resetLikes");
-    },
-  },
 };
 </script>
 
@@ -37,5 +32,10 @@ export default {
   flex-direction: column;
 }
 
+.headerStyle:onclick {
+  color: black;
+
+
+}
 
 </style>
