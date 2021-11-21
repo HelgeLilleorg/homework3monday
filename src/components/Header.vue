@@ -1,22 +1,17 @@
 <template>
-    <div id="nav">
-      <router-link to="/contactus">Contact Us</router-link> |
-      <router-link to="/"> Products </router-link> |
-
-      <router-link to="/about">About</router-link>
-    
+  <div id="nav">
+    <router-link to="/contactus">Contact Us</router-link> |
+    <router-link to="/"> Posts </router-link> |
+    <router-link to="/about">About</router-link>
     <router-view />
-    
-    </div>
+  </div>
 </template>
 
 <script>
-   export default{
-       name:"Header",
-
-   }
+export default {
+  name: "Header",
+};
 </script>
 
 <style>
-
 </style>
