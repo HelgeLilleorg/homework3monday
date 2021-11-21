@@ -6,18 +6,16 @@
   </div>
 </template>
 
-<script> 
+<script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 
-
 export default {
-  components: { 
+  components: {
     "v-header": Header,
     "v-footer": Footer,
-}
-}
-
+  },
+};
 </script>
 
 <style lang="scss">
@@ -37,7 +35,7 @@ export default {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #c969a4;
     }
   }
 }
